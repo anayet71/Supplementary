@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,18 @@
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
 
     :root {
-      --primary: #003366;           /* Deep Navy */
-      --primary-dark: #002244;      /* Dark Navy */
-      --accent: #CC0000;           /* Academic Crimson Red */
-      --accent-hover: #a00000;     
-      --gold: #D4AF37;             /* University Gold */
+      --primary: #003366;
+      /* Deep Navy */
+      --primary-dark: #002244;
+      /* Dark Navy */
+      --accent: #CC0000;
+      /* Academic Crimson Red */
+      --accent-hover: #a00000;
+      --gold: #D4AF37;
+      /* University Gold */
       --gold-light: #fffbeb;
-      --secondary: #f0f4f8;        /* Soft Cool Gray Tint */
+      --secondary: #f0f4f8;
+      /* Soft Cool Gray Tint */
       --success: #16a34a;
       --warning: #d97706;
       --danger: #dc2626;
@@ -447,7 +453,7 @@
       border-radius: 50px;
       color: var(--primary);
       font-weight: 700;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
     /* =========================       Footer    ========================= */
@@ -462,6 +468,12 @@
 
     footer strong {
       color: white;
+    }
+
+    a {
+      color: darkgray;
+      text-decoration: none;
+      font-weight: 400;
     }
 
     /* =========================       Responsive    ========================= */
@@ -506,6 +518,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="brand-container">
@@ -550,11 +563,7 @@
     <section class="search-box">
       <div class="search-wrapper">
         <span class="search-icon">🔎</span>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="আপনার প্রশ্ন লিখে খুঁজুন..."
-        >
+        <input type="text" id="searchInput" placeholder="আপনার প্রশ্ন লিখে খুঁজুন...">
       </div>
     </section>
 
@@ -896,6 +905,9 @@
     <p>
       শিক্ষার্থীদের সুবিধার্থে গুরুত্বপূর্ণ তথ্যগুলো এক জায়গায় সংকলিত।
     </p>
+    <p>
+      Developed By <a href="https://www.facebook.com/aarubb/">MD Anayet Ullah</a>
+    </p>
   </footer>
 
   <script>
@@ -912,7 +924,7 @@
 
       question.addEventListener("click", () => {
         const isOpen = item.classList.contains("open");
-        
+
         // Close all items
         faqItems.forEach(otherItem => {
           otherItem.classList.remove("open");
@@ -971,4 +983,5 @@
     }
   </script>
 </body>
+
 </html>
